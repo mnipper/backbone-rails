@@ -1,9 +1,13 @@
-App.module("FooterApp.show", function(Show, App, Backbone, Marionette, $, _) {
+App.module("FooterApp.Show", function(Show, App, Backbone, Marionette, $, _) {
   "use strict"
 
   Show.Controller = {
     showFooter: function() {
-      console.log('Hi from footer!');
+      var footerView = this.getFooterView();
+      App.footerRegion.show(footerView);
+    },
+    getFooterView: function() {
+      return new Show.Footer();
     }
   }
 });
