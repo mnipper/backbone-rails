@@ -10,6 +10,7 @@
   });
 
   App.addInitializer(function() {
+    App.module("HeaderApp").start();
     App.module("FooterApp").start();
   });
 
