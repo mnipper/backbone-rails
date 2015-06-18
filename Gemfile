@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'eco'
 gem 'compass-rails', github: 'Compass/compass-rails', branch: '2-0-stable'
 gem 'bootstrap-sass-rails'
+gem 'rabl'
+gem 'oj'
+gem 'responders'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
