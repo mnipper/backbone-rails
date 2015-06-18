@@ -4,7 +4,7 @@ App.module("HeaderApp.List", function(List, App, Backbone, Marionette, $, _) {
       var headerView = this.getHeaderView();
       App.headerRegion.show(headerView);
     },
-    getHeaderView: function() {
+    getHeaderView: function(links) {
       return new List.Header();
     }
   }
