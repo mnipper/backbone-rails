@@ -7,6 +7,6 @@
 
 <%= javascript_tag do %>
   $(function() {
-    App.start();
+    App.start({currentUser: gon.current_user});
   });
 <% end %>
