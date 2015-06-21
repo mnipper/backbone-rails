@@ -4,4 +4,8 @@ App.module("FooterApp.Show", function(Show, App, Backbone, Marionette, $, _) {
   Show.Footer = Backbone.Marionette.ItemView.extend({
     template: "footer/show/templates/show_footer"
   });
+
+  var modelEvents = {
+    "change": "render"
+  }
 });
